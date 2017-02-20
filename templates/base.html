@@ -1,0 +1,228 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Culture Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static "css/themify-icons.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static "css/flexslider.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static "css/lightbox.min.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static "css/ytplayer.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static "css/theme.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static "css/custom.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static "css/custom.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
+          rel='stylesheet' type='text/css'>
+</head>
+<body class="scroll-assist">
+<div class="nav-container">
+    <a id="top"></a>
+    <nav>
+
+        <div class="nav-bar">
+            <div class="module left">
+                <a href="index.html">
+                    <img class="logo logo-light" alt="High Heights Initiative" src="{% static "img/SSPP-logo.jpeg" %}"/>
+
+                </a>
+            </div>
+            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                <i class="ti-menu"></i>
+            </div>
+            <div class="module-group right">
+                <div class="module left">
+                    <ul class="menu">
+
+
+
+                    </ul>
+                </div>
+                <!--end of menu module-->
+                <div class="module widget-handle search-widget-handle left">
+                    <div class="search">
+                        <i class="ti-search"></i>
+                        <span class="title">Search Site</span>
+                    </div>
+                    <div class="function">
+                        <form class="search-form">
+                            <input type="text" placeholder="Type Here"/>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--end of module group-->
+        </div>
+    </nav>
+</div>
+{% block content %}
+    <div class="main-container">
+    <section class="page-title page-title-4 bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="uppercase mb0">Simple Feed</h3>
+                </div>
+                <div class="col-md-6 text-right">
+                    <ol class="breadcrumb breadcrumb-2">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="active">Simple Feed</li>
+                    </ol>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="feed-item mb96 mb-xs-48">
+                <div class="row mb16 mb-xs-0">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <h6 class="uppercase mb16 mb-xs-8">September 8th</h6>
+                        <h3>A clean, simple way to share
+                            <br/> basic updates about your company.</h3>
+                    </div>
+                </div>
+                <!--end of row-->
+                <div class="row mb32 mb-xs-16">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <img alt="Article Image" class="mb32 mb-xs-16" src="img/blog-single.jpg"/>
+                        <p class="lead">
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                            et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                            sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                            doloribus asperiores repellat.
+                        </p>
+                        <p class="lead">
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                            quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                            reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
+                        </p>
+                    </div>
+                </div>
+                <!--end of row-->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <a class="mb48 mb-xs-32 btn btn-lg" href="#">Share Article</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <!--end of feed item-->
+            <div class="feed-item mb96">
+                <div class="row mb16 mb-xs-0">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <h6 class="uppercase mb16 mb-xs-8">September 4th</h6>
+                        <h3>You can still embed media types
+                            <br/> using this blog type.</h3>
+                    </div>
+                </div>
+                <!--end of row-->
+                <div class="row mb32 mb-xs-16">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="embed-video-container embed-responsive embed-responsive-16by9 mb32 mb-xs-16">
+                            <iframe class="embed-responsive-item"
+                                    src="http://player.vimeo.com/video/25737856?badge=0&title=0&byline=0&title=0"
+                                    allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                        <!--end of embed video container-->
+                        <p class="lead">
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                            et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                            sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                            doloribus asperiores repellat.
+                        </p>
+                        <p class="lead">
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                            quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                            reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
+                        </p>
+                    </div>
+                </div>
+                <!--end of row-->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <a class="mb48 mb-xs-32 btn btn-lg" href="#">Share Article</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <!--end of feed item-->
+        </div>
+        <!--end of container-->
+    </section>
+{% endblock content %}
+
+
+
+
+<footer class="footer-1 bg-dark">
+    <div class="container">
+
+        <!--end of row-->
+        <div class="row">
+            <div class="col-sm-6">
+                <span class="sub">&copy; Copyright 2017 - High Heights Initiative</span>
+            </div>
+            <div class="col-sm-6 text-right">
+                <ul class="list-inline social-list">
+                    <li>
+                        <a href="#">
+                            <i class="ti-twitter-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ti-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ti-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ti-vimeo-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end of container-->
+    <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+</footer>
+</div>
+<script src="{% static "js/jquery.min.js" %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/flickr.js" %}"></script>
+<script src="{% static "js/flexslider.min.js" %}"></script>
+<script src="{% static "js/lightbox.min.js" %}"></script>
+<script src="{% static "js/masonry.min.js" %}"></script>
+<script src="{% static "js/twitterfetcher.min.js" %}"></script>
+<script src="{% static "js/spectragram.min.js" %}"></script>
+<script src="{% static "js/ytplayer.min.js" %}"></script>
+<script src="{% static "js/countdown.min.js" %}"></script>
+<script src="{% static "js/smooth-scroll.min.js" %}"></script>
+<script src="{% static "js/parallax.js" %}"></script>
+<script src="{% static "js/scripts.js" %}"></script>
+</body>
+</html>
