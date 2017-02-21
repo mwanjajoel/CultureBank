@@ -26,13 +26,12 @@
 
             <div class="row masonry masonryFlyIn mb40">
                 {% for post in posts %}
-                    <div class=" col-md-4 post-snippet masonry-item">
-
-                        <a href="/detail">
-                            <img alt="Post Image" src="{% static "img/blog-single-2.jpg" %}"/>
+                    <div class="col-sm-4 post-snippet masonry-item">
+                        <a href="#">
+                            <img alt="Post Image" src="{% static "img/blog-single-3.jpg" %}"/>
                         </a>
                         <div class="inner">
-                            <a href="/detail">
+                            <a href="#">
                                 <h5 class="mb0">{{ post.title }}</h5>
                                 <span class="inline-block mb16">{{ post.published_date }}</span>
                             </a>
@@ -54,7 +53,6 @@
                                 </li>
                             </ul>
                         </div>
-
                     </div>
                 {% endfor %}
             </div>
