@@ -16,16 +16,19 @@
 {% block content %}
 
     <section class="bg-secondary">
+
         <div class="container">
             <div class="row masonry-loader">
                 <div class="col-sm-12 text-center">
                     <div class="spinner"></div>
                 </div>
             </div>
-            {% for post in posts %}
-                <div class="row masonry masonryFlyIn mb40">
-                    <div class="col-sm-4 post-snippet masonry-item">
-                        <a href="#">
+
+            <div class="row masonry masonryFlyIn mb40">
+                {% for post in posts %}
+                    <div class=" col-md-4 post-snippet masonry-item">
+
+                        <a href="/detail">
                             <img alt="Post Image" src="{% static "img/blog-single-2.jpg" %}"/>
                         </a>
                         <div class="inner">
@@ -51,13 +54,14 @@
                                 </li>
                             </ul>
                         </div>
+
                     </div>
+                {% endfor %}
+            </div>
 
-
-                </div>
-            {% endfor %}
 
         </div>
+
 
     </section>
 
