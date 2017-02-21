@@ -14,15 +14,15 @@
     <h1><a href="/"> Culture Bank</a></h1>
 </div>
 {% block content %}
-    {% for post in posts %}
-        <section class="bg-secondary">
-            <div class="container">
-                <div class="row masonry-loader">
-                    <div class="col-sm-12 text-center">
-                        <div class="spinner"></div>
-                    </div>
-                </div>
 
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="row masonry-loader">
+                <div class="col-sm-12 text-center">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+            {% for post in posts %}
                 <div class="row masonry masonryFlyIn mb40">
                     <div class="col-sm-4 post-snippet masonry-item">
                         <a href="#">
@@ -55,12 +55,11 @@
 
 
                 </div>
+            {% endfor %}
 
-            </div>
+        </div>
 
-        </section>
-
-    {% endfor %}
+    </section>
 
 {% endblock content %}
 
